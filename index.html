@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Saúde no Rio de Janeiro | Nayr Alves</title>
+    <meta name="description" content="Compare planos de saúde individual, familiar e empresarial no Rio de Janeiro com atendimento direto de Nayr Alves pelo WhatsApp.">
+    <meta property="og:title" content="Nayr Alves | Cotação de Planos de Saúde no RJ">
+    <meta property="og:description" content="Compare hospitais, valores e regras de contratação com atendimento direto pelo WhatsApp.">
+    <meta property="og:image" content="og-nayr.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "name": "Nayr Alves | Facility",
+      "telephone": "+55-21-96956-3181",
+      "areaServed": "Rio de Janeiro e Região Metropolitana"
+    }
+    </script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0F4C5C',
+                            primary: '#146B82',
+                            light: '#E6F4F8',
+                            accent: '#10B981',
+                            accentHover: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Personalização extra de barra de rolagem e efeitos suaves */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image: radial-gradient(at 100% 0%, rgba(20, 107, 130, 0.08) 0px, transparent 50%),
+                              radial-gradient(at 0% 100%, rgba(16, 185, 129, 0.06) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Top Notice Bar -->
+    <div class="bg-brand-dark text-white text-xs md:text-sm py-2 px-4 text-center font-medium">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            <span>Atendimento humanizado e sem custo adicional em todo o Estado do Rio de Janeiro</span>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo / Brand Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="og-nayr.png"
+                     alt="Foto de Nayr Alves"
+                     width="44"
+                     height="44"
+                     class="w-11 h-11 rounded-xl object-cover object-center shadow-md border-2 border-white ring-1 ring-brand-primary/20 group-hover:scale-105 transition-transform">
+                <div>
+                    <span class="block font-bold text-slate-900 text-lg sm:text-xl leading-tight">Nayr Alves</span>
+                    <span class="block text-xs font-semibold text-brand-primary tracking-wide">Consultoria de Planos de Saúde</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                <a href="#simulador" class="hover:text-brand-primary transition-colors">Simulador</a>
+                <a href="#modalidades" class="hover:text-brand-primary transition-colors">Modalidades</a>
+                <a href="#operadoras" class="hover:text-brand-primary transition-colors">Operadoras</a>
+                <a href="#sobre" class="hover:text-brand-primary transition-colors">Sobre Mim</a>
+                <a href="#faq" class="hover:text-brand-primary transition-colors">Dúvidas</a>
+            </nav>
+
+            <!-- Direct WhatsApp Header CTA -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/5521969563181?text=Ol%C3%A1%2C%20Nayr!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20planos%20de%20sa%C3%BAde." 
+                   target="_blank" 
+                   rel="noopener"
+                   class="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-white px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-sm hover:shadow transition-all">
+                    <!-- WhatsApp SVG Icon -->
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.166 4.26 4.409-1.154z"/>
+                    </svg>
+                    <span class="hidden sm:inline">(21) 96956-3181</span>
+                    <span class="sm:hidden">Falar Agora</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="bg-mesh">
+
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        
+                        <!-- Badge Tag -->
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-light border border-brand-primary/20 text-brand-dark text-xs sm:text-sm font-semibold">
+                            <svg class="w-4 h-4 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Consultoria Independente & Sem Taxas
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                            Planos de saúde no <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-dark to-brand-primary">Rio de Janeiro</span> com atendimento direto
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Comparo hospitais, valores e regras de contratação para você, sua família ou seu CNPJ/MEI escolher com clareza, com orientação personalizada de <strong>Nayr Alves</strong>.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#simulador" 
+                               class="w-full sm:w-auto text-center bg-brand-dark hover:bg-brand-primary text-white font-bold px-7 py-4 rounded-xl shadow-lg shadow-brand-dark/20 hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                                Montar simulação rápida
+                            </a>
+                            <a href="https://wa.me/5521969563181?text=Ol%C3%A1%2C%20Nayr!%20Gostaria%20de%20receber%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida." 
+                               target="_blank"
+                               rel="noopener"
+                               class="w-full sm:w-auto text-center bg-white hover:bg-slate-100 text-brand-dark border-2 border-slate-200 font-bold px-7 py-3.5 rounded-xl transition-all flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5 text-brand-accent fill-current" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.166 4.26 4.409-1.154z"/>
+                                </svg>
+                                Conversar no WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Trust Highlights Badges -->
+                        <div class="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Cotação</p>
+                                <p class="text-sm font-bold text-slate-800">100% Gratuita</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Atendimento</p>
+                                <p class="text-sm font-bold text-slate-800">Todo o Estado RJ</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Opções</p>
+                                <p class="text-sm font-bold text-slate-800">Individual & MEI</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Economia</p>
+                                <p class="text-sm font-bold text-slate-800">Comparativo claro</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Quick Preview Card -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-100 relative">
+                            <div class="absolute -top-3 -right-3 bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                                Resposta Rápida
+                            </div>
+
+                            <div class="flex items-center gap-4 mb-6">
+                                <img src="og-nayr.png" alt="Nayr Alves, consultora de planos de saúde" width="56" height="56" class="w-14 h-14 rounded-full object-cover border-2 border-brand-primary shrink-0">
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Nayr Alves</h3>
+                                    <p class="text-xs text-slate-500">Sua Consultora de Saúde no RJ</p>
+                                    <div class="flex items-center gap-1 text-amber-400 text-xs mt-0.5">
+                                        ★★★★★ <span class="text-slate-600 font-medium ml-1">4.9/5 em satisfação</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-100 text-sm text-slate-600 mb-6">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-brand-accent font-bold">✓</span>
+                                    <span>Comparativo das tabelas atualizadas 2026.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <span class="text-brand-accent font-bold">✓</span>
+                                    <span>Verificação do seu hospital preferido no Rio.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <span class="text-brand-accent font-bold">✓</span>
+                                    <span>Análise para redução da mensalidade atual.</span>
+                                </div>
+                            </div>
+
+                            <a href="#simulador" class="block w-full text-center bg-gradient-to-r from-brand-primary to-brand-dark text-white font-bold py-3.5 rounded-xl hover:opacity-95 transition-opacity">
+                                Preencher Dados no Simulador ↓
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SIMULADOR INTELIGENTE DE COTAÇÃO -->
+        <section id="simulador" class="py-16 bg-white border-y border-slate-200/60">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center mb-10">
+                    <span class="text-brand-primary font-bold text-xs uppercase tracking-widest bg-brand-light px-3 py-1 rounded-full">Simulador Online</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Monte sua Cotação Personalizada</h2>
+                    <p class="text-slate-600 text-sm sm:text-base mt-1">Leva menos de 1 minuto. Preencha e receba a tabela direto no seu WhatsApp.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <form id="quoteForm" onsubmit="handleFormSubmit(event)" class="space-y-8">
+                        
+                        <!-- Passo 1: Modalidade -->
+                        <div>
+                            <label class="block font-bold text-slate-900 text-sm mb-3">1. Qual tipo de plano você procura?</label>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="modalidade" value="Individual" class="peer hidden" checked onchange="updateSummary()">
+                                    <div class="p-3 text-center rounded-xl border border-slate-300 bg-white peer-checked:border-brand-primary peer-checked:bg-brand-light/50 peer-checked:text-brand-dark font-medium text-xs sm:text-sm transition-all shadow-sm hover:border-slate-400">
+                                        Individual
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="modalidade" value="Familiar" class="peer hidden" onchange="updateSummary()">
+                                    <div class="p-3 text-center rounded-xl border border-slate-300 bg-white peer-checked:border-brand-primary peer-checked:bg-brand-light/50 peer-checked:text-brand-dark font-medium text-xs sm:text-sm transition-all shadow-sm hover:border-slate-400">
+                                        Familiar
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="modalidade" value="Empresarial / MEI" class="peer hidden" onchange="updateSummary()">
+                                    <div class="p-3 text-center rounded-xl border border-slate-300 bg-white peer-checked:border-brand-primary peer-checked:bg-brand-light/50 peer-checked:text-brand-dark font-medium text-xs sm:text-sm transition-all shadow-sm hover:border-slate-400">
+                                        Empresarial / MEI
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="modalidade" value="Adesão / Estudante / Sindicato" class="peer hidden" onchange="updateSummary()">
+                                    <div class="p-3 text-center rounded-xl border border-slate-300 bg-white peer-checked:border-brand-primary peer-checked:bg-brand-light/50 peer-checked:text-brand-dark font-medium text-xs sm:text-sm transition-all shadow-sm hover:border-slate-400">
+                                        Por Adesão
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Passo 2: Faixas Etárias / Vidas -->
+                        <div>
+                            <label for="idades" class="block font-bold text-slate-900 text-sm mb-2">2. Idades de quem entrará no plano *</label>
+                            <input type="text" id="idades" required placeholder="Ex.: 34, 31 e 4 anos" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-primary outline-none mb-3">
+                            <p class="text-xs text-slate-500 mb-3">Digite as idades separadas por vírgula. É mais rápido pelo celular.</p>
+                            <div class="hidden">
+                                <span class="block font-bold text-slate-900 text-sm">Faixas etárias (opcional)</span>
+                                <span class="text-xs font-bold bg-brand-primary text-white px-2.5 py-1 rounded-full">
+                                    Total: <span id="totalVidasBadge">1</span> pessoa(s)
+                                </span>
+                            </div>
+
+                            <div class="hidden">
+                                <!-- Group 1 -->
+                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-semibold text-slate-700">0 a 18 anos</span>
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" onclick="changeAgeCount('age_0_18', -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">-</button>
+                                        <span id="age_0_18" class="text-sm font-bold w-4 text-center">0</span>
+                                        <button type="button" onclick="changeAgeCount('age_0_18', 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">+</button>
+                                    </div>
+                                </div>
+                                <!-- Group 2 -->
+                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-semibold text-slate-700">19 a 28 anos</span>
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" onclick="changeAgeCount('age_19_28', -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">-</button>
+                                        <span id="age_19_28" class="text-sm font-bold w-4 text-center">1</span>
+                                        <button type="button" onclick="changeAgeCount('age_19_28', 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">+</button>
+                                    </div>
+                                </div>
+                                <!-- Group 3 -->
+                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-semibold text-slate-700">29 a 38 anos</span>
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" onclick="changeAgeCount('age_29_38', -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">-</button>
+                                        <span id="age_29_38" class="text-sm font-bold w-4 text-center">0</span>
+                                        <button type="button" onclick="changeAgeCount('age_29_38', 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">+</button>
+                                    </div>
+                                </div>
+                                <!-- Group 4 -->
+                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-semibold text-slate-700">39 a 48 anos</span>
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" onclick="changeAgeCount('age_39_48', -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">-</button>
+                                        <span id="age_39_48" class="text-sm font-bold w-4 text-center">0</span>
+                                        <button type="button" onclick="changeAgeCount('age_39_48', 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">+</button>
+                                    </div>
+                                </div>
+                                <!-- Group 5 -->
+                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-semibold text-slate-700">49 a 58 anos</span>
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" onclick="changeAgeCount('age_49_58', -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">-</button>
+                                        <span id="age_49_58" class="text-sm font-bold w-4 text-center">0</span>
+                                        <button type="button" onclick="changeAgeCount('age_49_58', 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">+</button>
+                                    </div>
+                                </div>
+                                <!-- Group 6 -->
+                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-semibold text-slate-700">59+ anos</span>
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" onclick="changeAgeCount('age_59_plus', -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">-</button>
+                                        <span id="age_59_plus" class="text-sm font-bold w-4 text-center">0</span>
+                                        <button type="button" onclick="changeAgeCount('age_59_plus', 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition-colors">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Passo 3: Preferências de Acomodação e Coparticipação -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-bold text-slate-900 text-sm mb-2">3. Preferência de Acomodação</label>
+                                <select id="acomodacao" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-3 text-sm font-medium focus:ring-2 focus:ring-brand-primary outline-none">
+                                    <option value="Enfermaria (Quarto Coletivo - Mais Econômico)">Enfermaria (Quarto Coletivo)</option>
+                                    <option value="Apartamento (Quarto Particular)">Apartamento (Quarto Particular)</option>
+                                    <option value="Indiferente / Quero comparar ambas">Indiferente / Quero comparar ambas</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-900 text-sm mb-2">4. Preferência de Coparticipação</label>
+                                <select id="coparticipacao" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-3 text-sm font-medium focus:ring-2 focus:ring-brand-primary outline-none">
+                                    <option value="Com Coparticipação (Mensalidade menor)">Com Coparticipação (Mensalidade menor)</option>
+                                    <option value="Sem Coparticipação (Valor fixo mensal)">Sem Coparticipação (Valor fixo)</option>
+                                    <option value="Quero entender a diferença">Quero entender a diferença</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Passo 4: Dados do Cliente -->
+                        <div class="grid md:grid-cols-2 gap-6 pt-2 border-t border-slate-200">
+                            <div>
+                                <label class="block font-bold text-slate-900 text-sm mb-2">Seu Nome *</label>
+                                <input type="text" id="clienteNome" required placeholder="Ex: Maria da Silva" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-primary outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-900 text-sm mb-2">Seu Bairro / Cidade no RJ *</label>
+                                <input type="text" id="clienteBairro" required placeholder="Ex: Tijuca - Rio de Janeiro" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-primary outline-none">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="hospital" class="block font-bold text-slate-900 text-sm mb-2">Algum hospital ou médico que não pode faltar?</label>
+                                <input type="text" id="hospital" placeholder="Ex.: Hospital X ou ainda não sei" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-primary outline-none">
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white font-extrabold text-base py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-3">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.166 4.26 4.409-1.154z"/>
+                                </svg>
+                                Receber Cotação Personalizada no WhatsApp
+                            </button>
+                            <p class="text-center text-xs text-slate-500 mt-2">Ao clicar, sua mensagem será aberta no WhatsApp. Usamos as informações apenas para elaborar a cotação. <a href="#privacidade" class="underline hover:text-brand-primary">Política de Privacidade</a>.</p>
+                        </div>
+
+                    </form>
+
+                    <!-- Summary Box Result Output (Desktop Option) -->
+                    <div id="simuladorResult" class="hidden mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
+                        <p class="text-xs font-bold text-emerald-800 uppercase tracking-wide">Mensagem Preparada com Sucesso!</p>
+                        <p class="text-xs text-emerald-700 mt-1">Caso a janela do WhatsApp não abra automaticamente, copie o texto abaixo e envie para <strong>(21) 96956-3181</strong>:</p>
+                        <textarea id="preparedText" readonly class="w-full mt-2 p-3 bg-white border border-emerald-200 rounded-lg text-xs font-mono text-slate-700 h-24"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. MODALIDADES DE PLANOS -->
+        <section id="modalidades" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-brand-primary font-bold text-xs uppercase tracking-widest bg-brand-light px-3 py-1 rounded-full">Opções Sob Medida</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Modalidades de Planos Atendidos</h2>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2">Escolha a opção que melhor se ajusta ao seu momento de vida ou negócio.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-light text-brand-dark flex items-center justify-center font-bold text-xl mb-6">
+                                👤
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Individual & Familiar</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                                Proteção para você e quem você ama. Opções de cobertura regional no RJ ou nacional, com acesso aos principais hospitais e clínicas.
+                            </p>
+                        </div>
+                        <button onclick="selectModalityAndScroll('Individual')" class="w-full text-center bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 font-bold py-3 rounded-xl text-sm transition-colors">
+                            Cotar Individual / Familiar
+                        </button>
+                    </div>
+
+                    <!-- Card 2 (Featured) -->
+                    <div class="bg-gradient-to-b from-brand-dark to-brand-primary text-white p-8 rounded-3xl shadow-xl relative flex flex-col justify-between transform md:-translate-y-2">
+                        <div class="absolute -top-3 right-6 bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Compare com clareza
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-white/10 text-white flex items-center justify-center font-bold text-xl mb-6">
+                                🏢
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Empresarial & MEI</h3>
+                            <p class="text-sm text-slate-100 leading-relaxed mb-6">
+                                Para microempresas, MEI e empresas. Verifico as opções compatíveis com o CNPJ, a região e o perfil dos beneficiários.
+                            </p>
+                        </div>
+                        <button onclick="selectModalityAndScroll('Empresarial / MEI')" class="w-full text-center bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-colors shadow">
+                            Cotar com CNPJ / MEI
+                        </button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-light text-brand-dark flex items-center justify-center font-bold text-xl mb-6">
+                                🔄
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Portabilidade & Troca</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                                Seu plano atual ficou caro ou perdeu o hospital que você usa? Analiso as opções de portabilidade ou aproveitamento de carências conforme as regras aplicáveis.
+                            </p>
+                        </div>
+                        <button onclick="selectModalityAndScroll('Individual')" class="w-full text-center bg-slate-100 hover:bg-brand-primary hover:text-white text-slate-800 font-bold py-3 rounded-xl text-sm transition-colors">
+                            Simular Portabilidade
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. OPERADORAS PARCEIRAS -->
+        <section id="operadoras" class="py-12 bg-white border-y border-slate-200/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Operadoras disponíveis conforme seu perfil</p>
+
+                <!-- Grid of stylized Operator Badges -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 items-center justify-center">
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Amil</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Bradesco Saúde</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">SulAmérica</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Unimed</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Assim Saúde</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Porto Seguro</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Prevent Senior</div>
+                    <div class="p-3 bg-slate-50 border border-slate-200/70 rounded-2xl font-bold text-slate-700 hover:border-brand-primary transition-colors text-sm">Golden Cross</div>
+                </div>
+
+                <p class="text-xs text-slate-500 mt-6">
+                    A disponibilidade, rede credenciada e valores variam conforme operadora, idade, região e tabela vigente.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 5. POR QUE COTAR COM NAYR ALVES (SOBRE A CONSULTORA) -->
+        <section id="sobre" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-sm grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Visual Avatar Column -->
+                    <div class="lg:col-span-5 flex flex-col items-center text-center">
+                        <!-- 
+                            DICA DE EDIÇÃO: 
+                            Para colocar uma foto real da Nayr, substitua o <div> abaixo por:
+                            <img src="URL_DA_FOTO.jpg" alt="Nayr Alves" class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover border-4 border-brand-primary shadow-lg">
+                        -->
+                        <img src="og-nayr.png" alt="Nayr Alves, consultora de planos de saúde" width="224" height="224" class="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-white shadow-xl">
+                        <h3 class="text-2xl font-bold text-slate-900 mt-6">Nayr Alves</h3>
+                        <p class="text-sm font-semibold text-brand-primary">Consultora Especializada em Planos de Saúde</p>
+                        <p class="text-xs text-slate-500 mt-1">Rio de Janeiro & Região Metropolitana</p>
+
+                        <a href="https://wa.me/5521969563181?text=Ol%C3%A1%2C%20Nayr!%20Gostaria%20de%20falar%20diretamente%20com%20voc%C3%AA." 
+                           target="_blank"
+                           rel="noopener"
+                           class="mt-6 inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-6 py-3 rounded-xl text-sm transition-all shadow">
+                            Falar Direto com Nayr
+                        </a>
+                    </div>
+
+                    <!-- Information Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="text-brand-primary font-bold text-xs uppercase tracking-widest bg-brand-light px-3 py-1 rounded-full">Atendimento Humanizado</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+                            Transparência total na escolha do seu plano, sem letras miúdas.
+                        </h2>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Contratar um plano de saúde envolve a segurança da sua família ou da sua empresa. Meu objetivo como consultora independente é analisar detalhadamente o perfil dos meus clientes para indicar o melhor custo-benefício.
+                        </p>
+
+                        <!-- Differentials Grid -->
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h4 class="font-bold text-slate-900 text-sm mb-1">Análise de Hospitais</h4>
+                                <p class="text-xs text-slate-600">Garantimos que o plano escolhido tenha pronto-socorro e internação nos hospitais da sua preferência.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h4 class="font-bold text-slate-900 text-sm mb-1">Sem Custo de Consultoria</h4>
+                                <p class="text-xs text-slate-600">Você não paga nada pelo meu atendimento. Os valores são os mesmos oficiais das operadoras.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h4 class="font-bold text-slate-900 text-sm mb-1">Estudo de Carências</h4>
+                                <p class="text-xs text-slate-600">Explicamos exatamente quais os prazos de carência e como aproveitar o tempo de uso do plano antigo.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h4 class="font-bold text-slate-900 text-sm mb-1">Suporte Pós-Venda</h4>
+                                <p class="text-xs text-slate-600">Continuo ao seu lado mesmo após a contratação para tirar dúvidas e auxiliar na implantação.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PASSO A PASSO DO ATENDIMENTO -->
+        <section class="py-16 bg-brand-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-brand-accent font-bold text-xs uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full">Simples & Rápido</span>
+                    <h2 class="text-3xl font-extrabold mt-2">Como Funciona o Atendimento</h2>
+                    <p class="text-slate-200 text-sm sm:text-base mt-2">Em 3 passos simples você garante o melhor contrato para sua saúde.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-8 rounded-3xl border border-white/10 relative">
+                        <span class="text-4xl font-extrabold text-brand-accent mb-4 block">01</span>
+                        <h3 class="text-xl font-bold mb-2">Envio das Informações</h3>
+                        <p class="text-sm text-slate-200 leading-relaxed">
+                            Você preenche o simulador acima ou manda uma mensagem para o meu WhatsApp informando quem utilizará o plano e suas preferências.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 p-8 rounded-3xl border border-white/10 relative">
+                        <span class="text-4xl font-extrabold text-brand-accent mb-4 block">02</span>
+                        <h3 class="text-xl font-bold mb-2">Comparativo Completo</h3>
+                        <p class="text-sm text-slate-200 leading-relaxed">
+                            Nayr prepara uma cotação personalizada comparando tabelas de preços, redes credenciadas e reajustes entre as principais operadoras.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 p-8 rounded-3xl border border-white/10 relative">
+                        <span class="text-4xl font-extrabold text-brand-accent mb-4 block">03</span>
+                        <h3 class="text-xl font-bold mb-2">Contratação Segura</h3>
+                        <p class="text-sm text-slate-200 leading-relaxed">
+                            Após escolher a melhor opção com calma, a contratação é feita digitalmente com toda a documentação assistida por Nayr Alves.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. PERGUNTAS FREQUENTES (FAQ) -->
+        <section id="faq" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                
+                <div class="text-center mb-12">
+                    <span class="text-brand-primary font-bold text-xs uppercase tracking-widest bg-brand-light px-3 py-1 rounded-full">Tire Suas Dúvidas</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Perguntas Frequentes</h2>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                            <span>Quem tem MEI consegue fazer plano empresarial?</span>
+                            <span id="faq-icon-1" class="text-brand-primary text-xl font-bold">+</span>
+                        </button>
+                        <div id="faq-answer-1" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                            Sim! A maioria das operadoras aceita CNPJ do tipo MEI ativo a partir de 6 meses (ou menos, dependendo da regra da operadora) para inclusão de 1 ou mais vidas. O valor costuma ser significativamente mais baixo do que a tabela individual pessoa física.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                            <span>Posso trocar de plano sem cumprir carências novamente?</span>
+                            <span id="faq-icon-2" class="text-brand-primary text-xl font-bold">+</span>
+                        </button>
+                        <div id="faq-answer-2" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                            Depende do tempo de permanência, das mensalidades e da compatibilidade entre os planos. Analiso se o caso se enquadra em portabilidade de carências pela ANS ou nas regras de redução de carência da nova operadora.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                            <span>Qual a diferença entre plano com e sem coparticipação?</span>
+                            <span id="faq-icon-3" class="text-brand-primary text-xl font-bold">+</span>
+                        </button>
+                        <div id="faq-answer-3" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                            No plano <strong>com coparticipação</strong>, a mensalidade fixa é menor, e você paga uma pequena porcentagem apenas quando realiza exames ou consultas. No plano <strong>sem coparticipação</strong>, a mensalidade é fixa e cobrirá integralmente todos os procedimentos inclusos sem taxa extra por uso.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                            <span>A consultoria da Nayr Alves tem custo adicional?</span>
+                            <span id="faq-icon-4" class="text-brand-primary text-xl font-bold">+</span>
+                        </button>
+                        <div id="faq-answer-4" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                            Não. A cotação e o suporte são 100% gratuitos para o cliente. Os valores contratados são estritamente as tabelas oficiais fornecidas pelas próprias operadoras e seguradoras de saúde.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <section id="privacidade" class="bg-slate-100 py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-xs text-slate-600 leading-relaxed">
+            <h2 class="font-bold text-slate-900 mb-2">Política de Privacidade</h2>
+            <p>As informações enviadas pelo simulador são encaminhadas ao WhatsApp de Nayr Alves apenas para elaborar a cotação solicitada. Não armazenamos os dados neste site nem os compartilhamos para finalidade diferente do atendimento, sem prejuízo dos direitos previstos na LGPD.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-brand-primary text-white flex items-center justify-center font-bold text-lg">
+                            NA
+                        </div>
+                        <span class="font-bold text-white text-lg">Nayr Alves</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Consultoria em planos de saúde no Rio de Janeiro e Região Metropolitana, com atendimento vinculado à Facility.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-3">Contato Direto</h4>
+                    <p class="text-xs text-slate-400 mb-1">Telefone / WhatsApp:</p>
+                    <a href="https://wa.me/5521969563181" target="_blank" rel="noopener" class="text-brand-accent font-bold text-base hover:underline block mb-3">
+                        (21) 96956-3181
+                    </a>
+                    <p class="text-xs text-slate-400">Atendimento presencial ou online em todo o Rio de Janeiro.</p>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-3">Aviso Legal</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Nayr Alves | Consultoria em Planos de Saúde | Atendimento vinculado à Facility. Este site é um canal independente de consultoria e não pertence às operadoras listadas. Valores, redes credenciadas e condições contratuais seguem as regras e tabelas vigentes de cada operadora e as normas da ANS.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+                © 2026 Nayr Alves | Consultoria de Planos de Saúde. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (Bottom Right) -->
+    <a id="floatingWhatsapp" href="https://wa.me/5521969563181?text=Ol%C3%A1%2C%20Nayr!%20Estou%20no%20seu%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Falar no WhatsApp com Nayr Alves"
+       class="fixed bottom-5 right-5 z-50 bg-brand-accent hover:bg-brand-accentHover text-white p-3.5 sm:p-4 rounded-full shadow-2xl transition-all transform hover:scale-110 flex items-center justify-center group invisible opacity-0 pointer-events-none">
+        
+        <!-- SVG Icon -->
+        <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.166 4.26 4.409-1.154z"/>
+        </svg>
+    </a>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // State for Age Groups Counts
+        const ageCounts = {
+            age_0_18: 0,
+            age_19_28: 1, // Default 1 person
+            age_29_38: 0,
+            age_39_48: 0,
+            age_49_58: 0,
+            age_59_plus: 0
+        };
+
+        const ageLabels = {
+            age_0_18: "0 a 18 anos",
+            age_19_28: "19 a 28 anos",
+            age_29_38: "29 a 38 anos",
+            age_39_48: "39 a 48 anos",
+            age_49_58: "49 a 58 anos",
+            age_59_plus: "59+ anos"
+        };
+
+        function changeAgeCount(fieldId, delta) {
+            const current = ageCounts[fieldId];
+            const newValue = Math.max(0, current + delta);
+            ageCounts[fieldId] = newValue;
+            document.getElementById(fieldId).innerText = newValue;
+            updateTotalVidas();
+        }
+
+        function updateTotalVidas() {
+            const total = Object.values(ageCounts).reduce((acc, curr) => acc + curr, 0);
+            document.getElementById('totalVidasBadge').innerText = total;
+            return total;
+        }
+
+        function selectModalityAndScroll(modalityValue) {
+            // Select appropriate radio input
+            const radios = document.getElementsByName('modalidade');
+            for (let radio of radios) {
+                if (radio.value.includes(modalityValue) || modalityValue.includes(radio.value)) {
+                    radio.checked = true;
+                    break;
+                }
+            }
+            // Scroll smoothly to simulator section
+            document.getElementById('simulador').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            const idades = document.getElementById('idades').value.trim();
+            if (!idades) {
+                alert('Informe pelo menos uma idade para continuar.');
+                return;
+            }
+
+            const nome = document.getElementById('clienteNome').value.trim();
+            const bairro = document.getElementById('clienteBairro').value.trim();
+            const hospital = document.getElementById('hospital').value.trim() || 'Ainda não sei';
+            const acomodacao = document.getElementById('acomodacao').value;
+            const coparticipacao = document.getElementById('coparticipacao').value;
+            
+            let modalidade = "Individual";
+            const radios = document.getElementsByName('modalidade');
+            for (let radio of radios) {
+                if (radio.checked) {
+                    modalidade = radio.value;
+                    break;
+                }
+            }
+
+            // Construct WhatsApp Message Text
+            const message = `*COTAÇÃO DE PLANO DE SAÚDE - SITE*
+----------------------------------------
+👤 *Nome:* ${nome}
+📍 *Bairro/Cidade:* ${bairro}
+📋 *Modalidade:* ${modalidade}
+🎂 *Idades:* ${idades}
+🏥 *Hospital ou médico:* ${hospital}
+🛏️ *Acomodação:* ${acomodacao}
+💳 *Coparticipação:* ${coparticipacao}
+----------------------------------------
+Olá, Nayr! Montei essa cotação no site e gostaria de receber os valores atualizados!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappNumber = "5521969563181";
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+            // Show text in result box for desktop fallback
+            document.getElementById('simuladorResult').classList.remove('hidden');
+            document.getElementById('preparedText').value = message;
+
+            // Open WhatsApp window
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.innerText = '-';
+            } else {
+                answer.classList.add('hidden');
+                icon.innerText = '+';
+            }
+        }
+
+        document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
+            link.addEventListener('click', () => {
+                if (typeof window.dataLayer !== 'undefined') {
+                    window.dataLayer.push({
+                        event: 'whatsapp_click',
+                        cta: link.dataset.cta || 'whatsapp'
+                    });
+                }
+            });
+        });
+
+        const floatingWhatsapp = document.getElementById('floatingWhatsapp');
+        const hero = document.getElementById('hero');
+        const simulator = document.getElementById('simulador');
+        const showFloatingWhatsapp = (visible) => {
+            floatingWhatsapp.classList.toggle('invisible', !visible);
+            floatingWhatsapp.classList.toggle('opacity-0', !visible);
+            floatingWhatsapp.classList.toggle('pointer-events-none', !visible);
+        };
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.target === hero) {
+                        showFloatingWhatsapp(!entry.isIntersecting);
+                    }
+                    if (entry.target === simulator && entry.isIntersecting) {
+                        showFloatingWhatsapp(false);
+                    }
+                });
+            }, { threshold: 0.15 });
+            observer.observe(hero);
+            observer.observe(simulator);
+        } else {
+            showFloatingWhatsapp(true);
+        }
+    </script>
+
+</body>
+</html>
