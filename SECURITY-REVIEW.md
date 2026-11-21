@@ -19,12 +19,18 @@ Tambem foram identificados problemas responsivos no navbar em telas menores que 
 
 O arquivo `index.html` executa `https://cdn.tailwindcss.com` sem SRI e sem CSP. Uma resposta comprometida do CDN ou de sua cadeia de entrega pode executar JavaScript arbitrario no contexto do site.
 
-Recomendacao:
+Correção aplicada:
 
-- Gerar uma versao compilada do Tailwind para publicar os arquivos localmente.
-- Evitar o carregamento em tempo de execucao do `cdn.tailwindcss.com`.
-- Se um CDN continuar necessario, fixar uma versao especifica e adicionar Subresource Integrity.
-- Adicionar uma Content Security Policy restritiva.
+- O Tailwind foi compilado localmente em `tailwind.css`.
+- O carregamento em tempo de execucao do `cdn.tailwindcss.com` foi removido.
+- A versão compilada é gerada com `npm run build:css`.
+
+Correções adicionais:
+
+- Recursos externos de JavaScript e fontes foram removidos.
+- Uma Content Security Policy foi adicionada ao HTML.
+- Subresource Integrity não é necessária no estado atual, pois não há dependências carregadas por CDN.
+- Se uma dependencia futura precisar de CDN, ela deve usar versao fixa e SRI.
 
 ### 2. Dados sensiveis na URL do WhatsApp
 
@@ -32,11 +38,13 @@ O simulador monta uma mensagem com nome, cidade/bairro, idades, hospital, acomod
 
 Esses dados podem aparecer no historico do navegador, logs de navegacao, previews de links e no servico externo do WhatsApp.
 
-Recomendacao:
+Correção aplicada:
 
-- Nao incluir dados pessoais ou de saude na URL.
-- Preferir um backend com consentimento, politica de retencao e divulgacoes explicitas.
-- Para o envio pelo WhatsApp, iniciar a conversa com o minimo necessario ou deixar o usuario revisar antes de compartilhar os dados.
+- Dados pessoais e de saude deixaram de ser incluidos na URL do WhatsApp.
+- O usuário fornece consentimento explicito antes de preparar a cotacao.
+- A cotacao fica visivel em uma area editavel para revisão antes do compartilhamento.
+- O WhatsApp abre apenas com o número de contato, sem dados preenchidos na URL.
+- O usuário pode copiar a cotacao e envia-la manualmente.
 
 ## Problemas responsivos
 
@@ -46,6 +54,11 @@ Recomendacao:
 | `index.html` | 85-121 | O header combina bloco de marca, subtitulo e CTA em altura fixa de `h-20`, com risco de loteamento em celulares estreitos. |
 | `index.html` | 620-657 | Os botoes de FAQ nao informam estado expandido por semantica ARIA, o que afeta navegacao assistiva. |
 
-## Acoes pendentes
+## Verificação de SQL Injection
 
-Os alertas desta auditoria nao foram corrigidos nesta etapa. O registro foi criado a pedido do usuario para documentar as conclusoes antes das correcoes.
+Nao foi encontrada vulnerabilidade de SQL Injection no estado atual.
+
+- O projeto atual não possui backend, endpoint de API ou conexão com banco de dados.
+- Os dados do formulário são processados exclusivamente no navegador.
+- Não existem queries SQL ou bibliotecas de banco de dados no código próprio.
+- Se um backend futuramente receber os dados do simulador, todas as consultas SQL devem usar parâmetros preparados e validação no servidor.
