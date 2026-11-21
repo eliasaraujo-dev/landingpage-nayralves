@@ -58,18 +58,18 @@
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2">
             
             <!-- Logo / Brand Name -->
-            <a href="#" class="flex items-center gap-3 group">
+            <a href="#" class="flex min-w-0 items-center gap-2 sm:gap-3 group">
                 <img src="og-nayr.png"
                      alt="Foto de Nayr Alves"
                      width="44"
                      height="44"
-                     class="w-11 h-11 rounded-xl object-cover object-center shadow-md border-2 border-white ring-1 ring-brand-primary/20 group-hover:scale-105 transition-transform">
-                <div>
-                    <span class="block font-bold text-slate-900 text-lg sm:text-xl leading-tight">Nayr Alves</span>
-                    <span class="block text-xs font-semibold text-brand-primary tracking-wide">Consultoria de Planos de Saúde</span>
+                     class="w-9 h-9 sm:w-11 sm:h-11 shrink-0 rounded-xl object-cover object-center shadow-md border-2 border-white ring-1 ring-brand-primary/20 group-hover:scale-105 transition-transform">
+                <div class="min-w-0">
+                    <span class="block truncate font-bold text-slate-900 text-sm sm:text-lg lg:text-xl leading-tight">Nayr Alves</span>
+                    <span class="hidden sm:block text-xs font-semibold text-brand-primary tracking-wide">Consultoria de Planos de Saúde</span>
                 </div>
             </a>
 
@@ -83,20 +83,34 @@
             </nav>
 
             <!-- Direct WhatsApp Header CTA -->
-            <div class="flex items-center gap-3">
+            <div class="flex shrink-0 items-center gap-2 sm:gap-3">
                 <a href="https://wa.me/5521969563181?text=Ol%C3%A1%2C%20Nayr!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20planos%20de%20sa%C3%BAde." 
                    target="_blank" 
                    rel="noopener"
-                   class="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-white px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-sm hover:shadow transition-all">
+                   aria-label="Falar com Nayr Alves no WhatsApp"
+                   class="inline-flex h-10 items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-white px-3 sm:px-4 rounded-xl font-bold text-xs sm:text-sm shadow-sm hover:shadow transition-all">
                     <!-- WhatsApp SVG Icon -->
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.166 4.26 4.409-1.154z"/>
                     </svg>
                     <span class="hidden sm:inline">(21) 96956-3181</span>
-                    <span class="sm:hidden">Falar Agora</span>
                 </a>
+                <button id="mobileMenuButton" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menu" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors">
+                    <svg id="mobileMenuIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </div>
         </div>
+        <nav id="mobileMenu" class="hidden md:hidden absolute left-0 right-0 top-full border-t border-slate-100 bg-white px-4 py-4 shadow-lg" aria-label="Menu principal">
+            <div class="max-w-7xl mx-auto grid gap-1">
+                <a href="#simulador" class="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-light hover:text-brand-primary">Simulador</a>
+                <a href="#modalidades" class="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-light hover:text-brand-primary">Modalidades</a>
+                <a href="#operadoras" class="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-light hover:text-brand-primary">Operadoras</a>
+                <a href="#sobre" class="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-light hover:text-brand-primary">Sobre Mim</a>
+                <a href="#faq" class="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-light hover:text-brand-primary">Dúvidas</a>
+            </div>
+        </nav>
     </header>
 
     <!-- MAIN CONTAINER -->
@@ -603,44 +617,44 @@
                     
                     <!-- FAQ 1 -->
                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                        <button type="button" onclick="toggleFaq(1)" aria-expanded="false" aria-controls="faq-answer-1" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
                             <span>Quem tem MEI consegue fazer plano empresarial?</span>
                             <span id="faq-icon-1" class="text-brand-primary text-xl font-bold">+</span>
                         </button>
-                        <div id="faq-answer-1" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                        <div id="faq-answer-1" role="region" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
                             Sim! A maioria das operadoras aceita CNPJ do tipo MEI ativo a partir de 6 meses (ou menos, dependendo da regra da operadora) para inclusão de 1 ou mais vidas. O valor costuma ser significativamente mais baixo do que a tabela individual pessoa física.
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                        <button type="button" onclick="toggleFaq(2)" aria-expanded="false" aria-controls="faq-answer-2" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
                             <span>Posso trocar de plano sem cumprir carências novamente?</span>
                             <span id="faq-icon-2" class="text-brand-primary text-xl font-bold">+</span>
                         </button>
-                        <div id="faq-answer-2" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                        <div id="faq-answer-2" role="region" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
                             Depende do tempo de permanência, das mensalidades e da compatibilidade entre os planos. Analiso se o caso se enquadra em portabilidade de carências pela ANS ou nas regras de redução de carência da nova operadora.
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                        <button type="button" onclick="toggleFaq(3)" aria-expanded="false" aria-controls="faq-answer-3" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
                             <span>Qual a diferença entre plano com e sem coparticipação?</span>
                             <span id="faq-icon-3" class="text-brand-primary text-xl font-bold">+</span>
                         </button>
-                        <div id="faq-answer-3" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                        <div id="faq-answer-3" role="region" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
                             No plano <strong>com coparticipação</strong>, a mensalidade fixa é menor, e você paga uma pequena porcentagem apenas quando realiza exames ou consultas. No plano <strong>sem coparticipação</strong>, a mensalidade é fixa e cobrirá integralmente todos os procedimentos inclusos sem taxa extra por uso.
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
+                        <button type="button" onclick="toggleFaq(4)" aria-expanded="false" aria-controls="faq-answer-4" class="w-full text-left p-5 font-bold text-slate-900 text-base flex justify-between items-center focus:outline-none">
                             <span>A consultoria da Nayr Alves tem custo adicional?</span>
                             <span id="faq-icon-4" class="text-brand-primary text-xl font-bold">+</span>
                         </button>
-                        <div id="faq-answer-4" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+                        <div id="faq-answer-4" role="region" class="hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
                             Não. A cotação e o suporte são 100% gratuitos para o cliente. Os valores contratados são estritamente as tabelas oficiais fornecidas pelas próprias operadoras e seguradoras de saúde.
                         </div>
                     </div>
@@ -817,15 +831,41 @@ Olá, Nayr! Montei essa cotação no site e gostaria de receber os valores atual
         function toggleFaq(id) {
             const answer = document.getElementById(`faq-answer-${id}`);
             const icon = document.getElementById(`faq-icon-${id}`);
+            const button = document.querySelector(`[aria-controls="faq-answer-${id}"]`);
             
             if (answer.classList.contains('hidden')) {
                 answer.classList.remove('hidden');
                 icon.innerText = '-';
+                button.setAttribute('aria-expanded', 'true');
             } else {
                 answer.classList.add('hidden');
                 icon.innerText = '+';
+                button.setAttribute('aria-expanded', 'false');
             }
         }
+
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isOpen = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+            mobileMenuButton.setAttribute('aria-label', isOpen ? 'Abrir menu' : 'Fechar menu');
+            mobileMenu.classList.toggle('hidden', isOpen);
+            mobileMenuIcon.innerHTML = isOpen
+                ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'
+                : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'Abrir menu');
+                mobileMenuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+            });
+        });
 
         document.getElementById('copyPreparedText').addEventListener('click', async () => {
             const preparedText = document.getElementById('preparedText');

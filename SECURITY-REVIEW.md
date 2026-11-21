@@ -50,9 +50,9 @@ Correção aplicada:
 
 | Arquivo | Linhas | Problema |
 |---|---|---|
-| `index.html` | 101-107 | Os links desktop usam `hidden md:flex`, mas nao existe menu mobile ou controle hamburguer. Os links desaparecem abaixo de `768px`. |
-| `index.html` | 85-121 | O header combina bloco de marca, subtitulo e CTA em altura fixa de `h-20`, com risco de loteamento em celulares estreitos. |
-| `index.html` | 620-657 | Os botoes de FAQ nao informam estado expandido por semantica ARIA, o que afeta navegacao assistiva. |
+| `index.html` | 64-107 | Corrigido: menu mobile com hamburguer, links acessiveis abaixo de `md` e fechamento ao selecionar uma secao. |
+| `index.html` | 85-121 | Corrigido: marca compacta em telas pequenas, subtitulo oculto no mobile e CTA sem texto excessivo. |
+| `index.html` | 608-646 | Corrigido: botoes de FAQ usam `aria-expanded` e `aria-controls`, atualizados pelo JavaScript. |
 
 ## Verificação de SQL Injection
 
